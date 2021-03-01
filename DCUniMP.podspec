@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DCUniMP'
-  s.version          = '3.1.4'
+  s.version          = '3.1.5'
   s.summary          = 'A short description of DCUniMP.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,7 @@ TODO: Add long description of the pod here.
   s.libraries = "c++"
 
   s.default_subspecs = "Core"
+  s.default_subspecs = "MiniAppToolManage"
   s.ios.deployment_target = '9.0'
 
   s.subspec "Core" do |ss|
