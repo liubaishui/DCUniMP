@@ -61,11 +61,11 @@
 		9F3CCE319E2EB22F6DD9FE15 /* Pods-DCUniMP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCUniMP_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DCUniMP_Tests/Pods-DCUniMP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A62E5E96C07DBDA4C6726176 /* Pods_DCUniMP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCUniMP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A925D77E9514471071F1C955 /* Pods-DCUniMP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCUniMP_Example.release.xcconfig"; path = "Target Support Files/Pods-DCUniMP_Example/Pods-DCUniMP_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BB4662726C9DF4C59DC9B232 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BB4662726C9DF4C59DC9B232 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C35AA70C82DA01FCE7CCE69D /* Pods_DCUniMP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCUniMP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB45B7F9DF71433A7F26102C /* Pods-DCUniMP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCUniMP_Example.debug.xcconfig"; path = "Target Support Files/Pods-DCUniMP_Example/Pods-DCUniMP_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DDB5D95959A58D19E6B6A3B6 /* DCUniMP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DCUniMP.podspec; path = ../DCUniMP.podspec; sourceTree = "<group>"; };
-		DFFC8AE443A1A18081057C54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DDB5D95959A58D19E6B6A3B6 /* DCUniMP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DCUniMP.podspec; path = ../DCUniMP.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DFFC8AE443A1A18081057C54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EEC88BD8A17B9EDF7906B785 /* Pods-DCUniMP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCUniMP_Tests.release.xcconfig"; path = "Target Support Files/Pods-DCUniMP_Tests/Pods-DCUniMP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				9F3CCE319E2EB22F6DD9FE15 /* Pods-DCUniMP_Tests.debug.xcconfig */,
 				EEC88BD8A17B9EDF7906B785 /* Pods-DCUniMP_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

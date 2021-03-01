@@ -6,9 +6,10 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+
 Pod::Spec.new do |s|
   s.name             = 'DCUniMP'
-  s.version          = '0.1.0'
+  s.version          = '3.1.3'
   s.summary          = 'A short description of DCUniMP.'
 
 # This description is used to generate tags and improve search results.
@@ -21,16 +22,38 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/2946350135@qq.com/DCUniMP'
+  s.homepage         = 'https://github.com/qingShi-dot/DCUniMP'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '2946350135@qq.com' => '2405632981@qq.com' }
-  s.source           = { :git => 'https://github.com/2946350135@qq.com/DCUniMP.git', :tag => s.version.to_s }
+  s.author           = { 'shunqiziran199202' => '2405632981@qq.com' }
+  s.source           = { :git => 'https://github.com/qingShi-dot/DCUniMP.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.requires_arc  = true
+  s.static_framework = true
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.frameworks = "JavaScriptCore", "CoreMedia", "MediaPlayer", "AVFoundation", "AVKit", "GLKit", "OpenGLES", "CoreText", "QuartzCore", "CoreGraphics", "QuickLook", "CoreTelephony", "AssetsLibrary", "CoreLocation", "AddressBook"
+  s.libraries = "c++"
 
+  s.default_subspecs = "Core"
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DCUniMP/Classes/**/*'
+  s.subspec "Core" do |ss|
+    ss.subspec "Headers" do |sss|
+      sss.source_files = "DCUniMP/Classes/Core/Headers/*.h"
+
+      sss.subspec "weexHeader" do |ssss|
+        ssss.source_files = "DCUniMP/Classes/Core/Headers/weexHeader/*.h"
+      end
+    end
+
+    ss.subspec "Libs" do |sss|
+      sss.vendored_library = "DCUniMP/Classes/Core/Libs/*.a"
+      sss.vendored_frameworks = "DCUniMP/Classes/Core/Libs/*.framework"
+    end
+  end
+
+  s.resources = ["DCUniMP/Classes/Core/Resources/*.js", "DCUniMP/Classes/Core/Resources/*.ttf", "DCUniMP/Classes/Core/Resources/*.bundle"]
   
   # s.resource_bundles = {
   #   'DCUniMP' => ['DCUniMP/Assets/*.png']

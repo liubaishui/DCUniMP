@@ -1,0 +1,22 @@
+{
+  "name": "DCUniMP",
+  "version": "0.1.0",
+  "summary": "A short description of DCUniMP.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/2946350135@qq.com/DCUniMP",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "2946350135@qq.com": "2405632981@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/2946350135@qq.com/DCUniMP.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DCUniMP/Classes/**/*"
+}
