@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DCUniMP'
-  s.version          = '3.1.3'
+  s.version          = '3.1.4'
   s.summary          = 'A short description of DCUniMP.'
 
 # This description is used to generate tags and improve search results.
@@ -52,6 +52,12 @@ TODO: Add long description of the pod here.
       sss.vendored_frameworks = "DCUniMP/Classes/Core/Libs/*.framework"
     end
   end
+  
+  s.subspec "MiniAppToolManage" do |ss|
+      ss.source_files = "DCUniMP/Classes/MiniAppToolManage/*.h"
+  end
+  
+  
 
   s.resources = ["DCUniMP/Classes/Core/Resources/*.js", "DCUniMP/Classes/Core/Resources/*.ttf", "DCUniMP/Classes/Core/Resources/*.bundle"]
   

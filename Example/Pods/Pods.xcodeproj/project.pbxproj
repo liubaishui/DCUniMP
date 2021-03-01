@@ -13,7 +13,6 @@
 		452943AD9AC3CBEB1AA91B650967EF8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		552175EBF4B5FA462EA4DB72FB7B1C3F /* Pods-DCUniMP_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5A9DA04CA71EECDA6D05D6F214DC24 /* Pods-DCUniMP_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CEF4D0ED821E21421EC4498A25D8C9A /* DCUniMP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D63A9019D3AB6C5995235929EF0E52A /* DCUniMP-dummy.m */; };
-		8DD4C3A9EB58E562AAA56A3C632C9DFE /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 307A9D236AF906179227C16D14E9C98B /* ReplaceMe.m */; };
 		D7E7D89D92E19219B21E01A89BF6A31A /* Pods-DCUniMP_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D144BECAD03E431EFF6E3FE8447D7587 /* Pods-DCUniMP_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB46828E2602417E2A2A287163D2D29D /* DCUniMP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 148B414E8B4A4A93000869C3504F6C3C /* DCUniMP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEDB9AD608C6162E27A596A08611F6AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -42,11 +41,10 @@
 		0F705D3050A4C19AC8E2C0DD5909AB74 /* DCUniMP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DCUniMP.modulemap; sourceTree = "<group>"; };
 		148B414E8B4A4A93000869C3504F6C3C /* DCUniMP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCUniMP-umbrella.h"; sourceTree = "<group>"; };
 		180987D16E7DE07AED0C50A5E01D392F /* Pods-DCUniMP_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DCUniMP_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		189D770E1DEDF0804A49C8D3CBC12385 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		189D770E1DEDF0804A49C8D3CBC12385 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D63A9019D3AB6C5995235929EF0E52A /* DCUniMP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCUniMP-dummy.m"; sourceTree = "<group>"; };
-		307A9D236AF906179227C16D14E9C98B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = DCUniMP/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		386EC780CA4562720058C737766EFF81 /* DCUniMP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DCUniMP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3B20A54C64204DD18CADAFBD61FE715A /* DCUniMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DCUniMP.framework; path = DCUniMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		386EC780CA4562720058C737766EFF81 /* DCUniMP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DCUniMP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B20A54C64204DD18CADAFBD61FE715A /* DCUniMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCUniMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2DC773ADF9751F5C9D1C254D8E4B98 /* Pods-DCUniMP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCUniMP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3E0C9FF5B65001AF4C67B3A5183DA021 /* DCUniMP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCUniMP-prefix.pch"; sourceTree = "<group>"; };
 		415BE69304F4A11DE5D117ABE1838490 /* Pods-DCUniMP_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DCUniMP_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -59,17 +57,17 @@
 		7A5A9DA04CA71EECDA6D05D6F214DC24 /* Pods-DCUniMP_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DCUniMP_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7B97A5ED1784306D35EF9EB5535C6E9C /* DCUniMP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCUniMP.debug.xcconfig; sourceTree = "<group>"; };
 		86B58360DEAB619EB96BAA89C203C420 /* Pods-DCUniMP_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DCUniMP_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2B8D5CEA9E75B0C77E16264E8DCC232 /* DCUniMP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DCUniMP-Info.plist"; sourceTree = "<group>"; };
-		A569C9A0E706060C4029C970991B9A7D /* Pods_DCUniMP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DCUniMP_Example.framework; path = "Pods-DCUniMP_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A569C9A0E706060C4029C970991B9A7D /* Pods_DCUniMP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCUniMP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD126EBBD1B8CFBCCBCB699AD31B4287 /* Pods-DCUniMP_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DCUniMP_Tests-Info.plist"; sourceTree = "<group>"; };
 		B1D7A2056BD3EBAC5ACCD07F6311A5D3 /* Pods-DCUniMP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCUniMP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2722F8F48A0FD23856F31FD7F40F682 /* Pods_DCUniMP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DCUniMP_Tests.framework; path = "Pods-DCUniMP_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2722F8F48A0FD23856F31FD7F40F682 /* Pods_DCUniMP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCUniMP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DAB8E1E02DB48C02F344DA79BEA8E1 /* Pods-DCUniMP_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCUniMP_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CC9032C80150EEE821A4F853E0BADA6E /* Pods-DCUniMP_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DCUniMP_Tests-dummy.m"; sourceTree = "<group>"; };
 		D144BECAD03E431EFF6E3FE8447D7587 /* Pods-DCUniMP_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DCUniMP_Example-umbrella.h"; sourceTree = "<group>"; };
 		DADABA4FA24C07CE2442E40745BDC608 /* Pods-DCUniMP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCUniMP_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F7A7260E2823A3B9E19B1330DC9EB625 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F7A7260E2823A3B9E19B1330DC9EB625 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +151,6 @@
 		4FE2357AF4A2428DD0532220E0232122 /* DCUniMP */ = {
 			isa = PBXGroup;
 			children = (
-				307A9D236AF906179227C16D14E9C98B /* ReplaceMe.m */,
 				63432F5E4F3E87F3E3163CFE920C60FE /* Pod */,
 				7D9A716FB58D5D12225286674EE714B6 /* Support Files */,
 			);
@@ -384,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CEF4D0ED821E21421EC4498A25D8C9A /* DCUniMP-dummy.m in Sources */,
-				8DD4C3A9EB58E562AAA56A3C632C9DFE /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,8 +649,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
