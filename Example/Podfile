@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DCUniMP_Example' do
+  pod 'DCUniMP', :path => '../'
+
+  target 'DCUniMP_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
