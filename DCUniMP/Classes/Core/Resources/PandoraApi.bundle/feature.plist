@@ -2,73 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Bluetooth</key>
+	<key>Accelerometer</key>
 	<dict>
 		<key>class</key>
-		<string>libBlueTooth</string>
-	</dict>
-	<key>Geolocation</key>
-	<dict>
-		<key>class</key>
-		<string>PGGeolocation</string>
+		<string>PGAccelerometer</string>
 		<key>global</key>
 		<false/>
 	</dict>
-	<key>Orientation</key>
+	<key>Ad</key>
 	<dict>
 		<key>class</key>
-		<string>PGOrientation</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Maps</key>
-	<dict>
-		<key>class</key>
-		<string>PGMap</string>
+		<string>FeatureUniAd</string>
 		<key>global</key>
 		<true/>
-		<key>server</key>
-		<dict>
-			<key>class</key>
-			<string>PGBaiduKeyVerify</string>
-			<key>identifier</key>
-			<string>com.baidu.keyverify</string>
-		</dict>
-	</dict>
-	<key>Device</key>
-	<dict>
-		<key>class</key>
-		<string>PGDeviceStatus</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>File</key>
-	<dict>
-		<key>class</key>
-		<string>PGFile</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Cache</key>
-	<dict>
-		<key>class</key>
-		<string>PGCache</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Zip</key>
-	<dict>
-		<key>class</key>
-		<string>PGZip</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Runtime</key>
-	<dict>
-		<key>class</key>
-		<string>PGRuntime</string>
-		<key>global</key>
-		<false/>
 	</dict>
 	<key>Audio</key>
 	<dict>
@@ -77,92 +23,16 @@
 		<key>global</key>
 		<false/>
 	</dict>
-	<key>Accelerometer</key>
+	<key>Bluetooth</key>
 	<dict>
 		<key>class</key>
-		<string>PGAccelerometer</string>
-		<key>global</key>
-		<false/>
+		<string>libBlueTooth</string>
 	</dict>
-	<key>Push</key>
-	<dict>
-		<key>server</key>
-		<dict>
-			<key>class</key>
-			<string>PGPushServer</string>
-			<key>identifier</key>
-			<string>com.pushserver</string>
-		</dict>
-		<key>baseclass</key>
-		<string>PGPush</string>
-		<key>global</key>
-		<true/>
-		<key>autostart</key>
-		<true/>
-	</dict>
-	<key>barcode</key>
+	<key>Cache</key>
 	<dict>
 		<key>class</key>
-		<string>PGBarcode</string>
+		<string>PGCache</string>
 		<key>global</key>
-		<true/>
-	</dict>
-	<key>XMLHttpRequest</key>
-	<dict>
-		<key>class</key>
-		<string>PGXHR</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>UI</key>
-	<dict>
-		<key>class</key>
-		<string>PGUI</string>
-		<key>global</key>
-		<false/>
-		<key>extend</key>
-		<dict>
-			<key>Navigator</key>
-			<string>PG_Navigate</string>
-			<key>WebNavigator</key>
-			<string>PGWebNavi</string>
-		</dict>
-	</dict>
-	<key>Contacts</key>
-	<dict>
-		<key>class</key>
-		<string>PGContacts</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Proximity</key>
-	<dict>
-		<key>class</key>
-		<string>PGProximity</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Invocation</key>
-	<dict>
-		<key>class</key>
-		<string>PGInvocation</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Statistic</key>
-	<dict>
-		<key>server</key>
-		<dict>
-			<key>class</key>
-			<string>PGUmengStartUp</string>
-			<key>identifier</key>
-			<string>com.umeng.startup</string>
-		</dict>
-		<key>class</key>
-		<string>PGStatistic</string>
-		<key>global</key>
-		<true/>
-		<key>autostart</key>
 		<false/>
 	</dict>
 	<key>Camera</key>
@@ -179,14 +49,33 @@
 		<key>global</key>
 		<true/>
 	</dict>
-	<key>Storage</key>
+	<key>Contacts</key>
 	<dict>
 		<key>class</key>
-		<string>PGNStorage</string>
-		<key>autostart</key>
-		<true/>
+		<string>PGContacts</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Device</key>
+	<dict>
+		<key>class</key>
+		<string>PGDeviceStatus</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Downloader</key>
+	<dict>
+		<key>class</key>
+		<string>PGDownload</string>
 		<key>global</key>
 		<true/>
+	</dict>
+	<key>File</key>
+	<dict>
+		<key>class</key>
+		<string>PGFile</string>
+		<key>global</key>
+		<false/>
 	</dict>
 	<key>Gallery</key>
 	<dict>
@@ -195,10 +84,45 @@
 		<key>global</key>
 		<true/>
 	</dict>
-	<key>Downloader</key>
+	<key>Geolocation</key>
 	<dict>
 		<key>class</key>
-		<string>PGDownload</string>
+		<string>PGGeolocation</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Invocation</key>
+	<dict>
+		<key>class</key>
+		<string>PGInvocation</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>LivePusher</key>
+	<dict>
+		<key>class</key>
+		<string>PGLivePush</string>
+		<key>global</key>
+		<true/>
+	</dict>
+	<key>Maps</key>
+	<dict>
+		<key>class</key>
+		<string>PGMap</string>
+		<key>global</key>
+		<true/>
+		<key>server</key>
+		<dict>
+			<key>class</key>
+			<string>PGBaiduKeyVerify</string>
+			<key>identifier</key>
+			<string>com.baidu.keyverify</string>
+		</dict>
+	</dict>
+	<key>Media</key>
+	<dict>
+		<key>class</key>
+		<string>PGMediaVideo</string>
 		<key>global</key>
 		<true/>
 	</dict>
@@ -209,88 +133,12 @@
 		<key>global</key>
 		<true/>
 	</dict>
-	<key>Uploader</key>
-	<dict>
-		<key>class</key>
-		<string>PGUpload</string>
-		<key>global</key>
-		<true/>
-	</dict>
-	<key>Payment</key>
-	<dict>
-		<key>class</key>
-		<string>PGPlatbyManager</string>
-		<key>global</key>
-		<true/>
-		<key>extend</key>
-		<dict/>
-	</dict>
-	<key>Speech</key>
-	<dict>
-		<key>class</key>
-		<string>PGSpeech</string>
-		<key>global</key>
-		<true/>
-		<key>extend</key>
-		<dict>
-			<key>baidu</key>
-			<string>PGBaiduSpeech</string>
-			<key>ifly</key>
-			<string>PGIFLYSpeech</string>
-		</dict>
-	</dict>
-	<key>OAuth</key>
-	<dict>
-		<key>extend</key>
-		<dict>
-			<key>weibo</key>
-			<string>PGSinaWBOauth</string>
-			<key>xiaomi</key>
-			<string>PGMiOauth</string>
-			<key>qq</key>
-			<string>PGQQOauth</string>
-			<key>qihoo</key>
-			<string>PGQHOauth</string>
-			<key>weixin</key>
-			<string>PGWXOauth</string>
-			<key>apple</key>
-			<string>PGAppleOauth</string>
-			<key>univerify</key>
-			<string>PGUniVerify</string>
-		</dict>
-		<key>global</key>
-		<true/>
-		<key>class</key>
-		<string>PGOauthManager</string>
-	</dict>
-	<key>Share</key>
-	<dict>
-		<key>class</key>
-		<string>PGShareManager</string>
-		<key>global</key>
-		<true/>
-		<key>autostart</key>
-		<true/>
-		<key>argument</key>
-		<string>weixin</string>
-		<key>extend</key>
-		<dict>
-			<key>qq</key>
-			<string>PGTencentQQShare</string>
-			<key>tencentweibo</key>
-			<string>PGQQShare</string>
-			<key>sinaweibo</key>
-			<string>PGSinaShare</string>
-			<key>weixin</key>
-			<string>PGWXShare</string>
-		</dict>
-	</dict>
 	<key>NativeObj</key>
 	<dict>
-		<key>class</key>
-		<string>PGNativeObj</string>
 		<key>autostart</key>
 		<false/>
+		<key>class</key>
+		<string>PGNativeObj</string>
 		<key>global</key>
 		<true/>
 	</dict>
@@ -310,52 +158,106 @@
 	</dict>
 	<key>Notification</key>
 	<dict>
+		<key>autostart</key>
+		<true/>
 		<key>class</key>
 		<string>PGNotification</string>
 		<key>global</key>
 		<true/>
-		<key>autostart</key>
-		<true/>
 	</dict>
-	<key>fingerprint</key>
+	<key>OAuth</key>
 	<dict>
 		<key>class</key>
-		<string>Fingerprint</string>
+		<string>PGOauthManager</string>
+		<key>extend</key>
+		<dict>
+			<key>apple</key>
+			<string>PGAppleOauth</string>
+			<key>facebook</key>
+			<string>PGFBOauth</string>
+			<key>google</key>
+			<string>PGGoogleOauth</string>
+			<key>qihoo</key>
+			<string>PGQHOauth</string>
+			<key>qq</key>
+			<string>PGQQOauth</string>
+			<key>univerify</key>
+			<string>PGUniVerify</string>
+			<key>weibo</key>
+			<string>PGSinaWBOauth</string>
+			<key>weixin</key>
+			<string>PGWXOauth</string>
+			<key>xiaomi</key>
+			<string>PGMiOauth</string>
+		</dict>
 		<key>global</key>
 		<true/>
 	</dict>
-	<key>Stream</key>
+	<key>Orientation</key>
 	<dict>
 		<key>class</key>
-		<string>PGStream</string>
+		<string>PGOrientation</string>
 		<key>global</key>
 		<false/>
 	</dict>
-	<key>VideoPlayer</key>
+	<key>Payment</key>
 	<dict>
 		<key>class</key>
-		<string>PGVideo</string>
+		<string>PGPlatbyManager</string>
+		<key>extend</key>
+		<dict/>
 		<key>global</key>
 		<true/>
 	</dict>
-	<key>Media</key>
+	<key>Proximity</key>
 	<dict>
 		<key>class</key>
-		<string>PGMediaVideo</string>
+		<string>PGProximity</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Push</key>
+	<dict>
+		<key>autostart</key>
+		<true/>
+		<key>baseclass</key>
+		<string>PGPush</string>
 		<key>global</key>
 		<true/>
+		<key>server</key>
+		<dict>
+			<key>class</key>
+			<string>PGPushServer</string>
+			<key>identifier</key>
+			<string>com.pushserver</string>
+		</dict>
 	</dict>
-	<key>LivePusher</key>
+	<key>Runtime</key>
 	<dict>
 		<key>class</key>
-		<string>PGLivePush</string>
+		<string>PGRuntime</string>
 		<key>global</key>
-		<true/>
+		<false/>
 	</dict>
-	<key>Ad</key>
+	<key>Share</key>
 	<dict>
+		<key>argument</key>
+		<string>weixin</string>
+		<key>autostart</key>
+		<true/>
 		<key>class</key>
-		<string>FeatureUniAd</string>
+		<string>PGShareManager</string>
+		<key>extend</key>
+		<dict>
+			<key>qq</key>
+			<string>PGTencentQQShare</string>
+			<key>sinaweibo</key>
+			<string>PGSinaShare</string>
+			<key>tencentweibo</key>
+			<string>PGQQShare</string>
+			<key>weixin</key>
+			<string>PGWXShare</string>
+		</dict>
 		<key>global</key>
 		<true/>
 	</dict>
@@ -366,17 +268,119 @@
 		<key>global</key>
 		<false/>
 	</dict>
-	<key>iBeacon</key>
+	<key>Speech</key>
 	<dict>
 		<key>class</key>
-		<string>PGBeacon</string>
+		<string>PGSpeech</string>
+		<key>extend</key>
+		<dict>
+			<key>baidu</key>
+			<string>PGBaiduSpeech</string>
+			<key>ifly</key>
+			<string>PGIFLYSpeech</string>
+		</dict>
 		<key>global</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>Sqlite</key>
 	<dict>
 		<key>class</key>
 		<string>libSqlite</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Statistic</key>
+	<dict>
+		<key>autostart</key>
+		<false/>
+		<key>class</key>
+		<string>PGStatistic</string>
+		<key>global</key>
+		<true/>
+		<key>server</key>
+		<dict>
+			<key>class</key>
+			<string>PGUmengStartUp</string>
+			<key>identifier</key>
+			<string>com.umeng.startup</string>
+		</dict>
+	</dict>
+	<key>Storage</key>
+	<dict>
+		<key>autostart</key>
+		<true/>
+		<key>class</key>
+		<string>PGNStorage</string>
+		<key>global</key>
+		<true/>
+	</dict>
+	<key>Stream</key>
+	<dict>
+		<key>class</key>
+		<string>PGStream</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>UI</key>
+	<dict>
+		<key>class</key>
+		<string>PGUI</string>
+		<key>extend</key>
+		<dict>
+			<key>Navigator</key>
+			<string>PG_Navigate</string>
+			<key>WebNavigator</key>
+			<string>PGWebNavi</string>
+		</dict>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Uploader</key>
+	<dict>
+		<key>class</key>
+		<string>PGUpload</string>
+		<key>global</key>
+		<true/>
+	</dict>
+	<key>VideoPlayer</key>
+	<dict>
+		<key>class</key>
+		<string>PGVideo</string>
+		<key>global</key>
+		<true/>
+	</dict>
+	<key>XMLHttpRequest</key>
+	<dict>
+		<key>class</key>
+		<string>PGXHR</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>Zip</key>
+	<dict>
+		<key>class</key>
+		<string>PGZip</string>
+		<key>global</key>
+		<false/>
+	</dict>
+	<key>barcode</key>
+	<dict>
+		<key>class</key>
+		<string>PGBarcode</string>
+		<key>global</key>
+		<true/>
+	</dict>
+	<key>fingerprint</key>
+	<dict>
+		<key>class</key>
+		<string>Fingerprint</string>
+		<key>global</key>
+		<true/>
+	</dict>
+	<key>iBeacon</key>
+	<dict>
+		<key>class</key>
+		<string>PGBeacon</string>
 		<key>global</key>
 		<false/>
 	</dict>

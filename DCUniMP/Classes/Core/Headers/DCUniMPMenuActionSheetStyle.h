@@ -11,6 +11,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface DCUniMPCapsuleButtonStyle : NSObject
+/// 胶囊按钮背景颜色 支持："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串
+@property (nonatomic, copy) NSString *backgroundColor;
+/// 胶囊按钮 “···｜x” 的字体颜色 支持："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串
+@property (nonatomic, copy) NSString *textColor;
+/// 胶囊按钮按下状态背景颜色 支持："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串
+@property (nonatomic, copy) NSString *highlightColor;
+/// 胶囊按钮边框颜色 支持："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串
+@property (nonatomic, copy) NSString *borderColor;
+
+@end
+
 @interface DCUniMPMenuActionSheetStyle : NSObject
 
 /// ActionSheet 按钮字体颜色 支持："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串。默认值黑色
@@ -23,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *fontWeight;
 
 @end
+
 
 @interface DCUniMPMenuActionSheetItem : NSObject
 

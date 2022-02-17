@@ -51,7 +51,6 @@
 #import "WXMonitor.h"
 #import "WXModuleProtocol.h"
 #import "WXModalUIModule.h"
-#import "WXLog.h"
 #import "WXListComponent.h"
 #import "WXJSFrameworkLoadProtocol.h"
 #import "WXJSExceptionProtocol.h"

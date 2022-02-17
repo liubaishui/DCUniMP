@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DCUniMP'
-  s.version          = '3.1.5'
+  s.version          = '3.3.11'
   s.summary          = 'A short description of DCUniMP.'
 
 # This description is used to generate tags and improve search results.
@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/qingShi-dot/DCUniMP'
+  s.homepage         = 'https://github.com/liubaishui/DCUniMP'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shunqiziran199202' => '2405632981@qq.com' }
-  s.source           = { :git => 'https://github.com/qingShi-dot/DCUniMP.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/liubaishui/DCUniMP.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.requires_arc  = true
   s.static_framework = true

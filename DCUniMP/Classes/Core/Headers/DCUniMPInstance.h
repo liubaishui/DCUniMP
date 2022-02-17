@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param completion 方法执行回调
 - (void)closeWithCompletion:(DCUniMPResultBlock)completion;
 
+/// 向小程序发送事件
+/// @param event 事件名称
+/// @param data 数据：NSString 或 NSDictionary 类型
+- (void)sendUniMPEvent:(NSString *)event data:(id __nullable)data;
+
 @end
 
 NS_ASSUME_NONNULL_END
